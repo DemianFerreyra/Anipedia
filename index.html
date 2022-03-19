@@ -11,35 +11,14 @@
 
 <body>
   <nav class="superior">
-    <input class="placeholder" type="text">
     <h1>anipedia</h1>
+    <input class="placeholder" type="text">
+    <img src="/imagenes/iconos/lupa.png" class="buscar" alt="">
   </nav>
   <div class="resultado">
 
   </div>
-
-  <script src="./script.js">
-    var datos = [];
-    datos.push({titulo: 'naruto', desc: 'naruto ananashe'})
-    console.log(datos)
-    function leer() {
-      let resultado = document.querySelector('.resultado');
-
-
-      for (const dato of datos) {
-        let datoParrafo = document.querySelector('.resultado').innerHTML;
-        datoParrafo.innerHTML = `<div class="tarjeta">
-      <img src=${"./sample.jpg"} class="imagen" alt="">
-      <h1>${dato.titulo}</h1>
-      <p>${dato.desc}</p>
-      </div>` + datoParrafo;
-
-        resultado.appendChild(datoParrafo);
-      }
-    }
-  </script>
-
-
+  <script src="./script.js"></script>
 </body>
 
 </html>
