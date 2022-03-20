@@ -77,10 +77,8 @@ nav ul li a:hover{
     float: left;
     overflow: hidden;
 }
-.tarjeta p{
-    overflow: hidden;
-}
 .tarjeta h1{
+    font-size: 1rem;
     text-align: center;
     margin-bottom: 1rem;
 }

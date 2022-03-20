@@ -7,12 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anipedia</title>
   <link rel="stylesheet" href="./styles.css">
+ 
 </head>
 
 <body>
   <nav class="superior">
     <h1>anipedia</h1>
     <input class="placeholder" type="text">
+    <form id="search_form" class="col s12"></form>
     <img src="/imagenes/iconos/lupa.png" class="buscar" alt="">
 
     <ul class="opciones">
@@ -25,7 +27,10 @@
   <div class="resultado"> </div>
   <div class="nombre-lista">recomendaciones >></div>
   <div class="recomendaciones"> </div>
-  <script src="/script.js"></script>
+
+  <script type="module" src="./script.js"></script>
+  <script type="module" src="./index.js"></script>
+ 
 </body>
 
 </html>

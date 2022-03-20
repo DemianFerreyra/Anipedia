@@ -1,10 +1,17 @@
-const base_url = "https://api.jikan.moe/v3/anime/1";
+import { topanime } from "./script.js";
+const base_url = 'https://api.jikan.moe/v4/top/anime';
+var topanimes = [];
 
-function PageLoaded(){
-    fetch(base_url)
-    .then(res=> res.json())
-    .then(data=> console.log(data))
-    .catch(err=> console.warn(err.message));
-}
+fetch(base_url).then(res => res.json())
+.then(data => {
 
-window.addEventListener("load", PageLoaded);
+    for (let index = 0; index < data.data.length; index++) {
+        var newobj = {
+            name: data.data[index].title,
+            image: data.data[index].images.jpg.image_url,
+        }
+        topanimes.push(newobj);
+    }
+    topanime(topanimes);
+})
+.catch(err=> console.log(err))
