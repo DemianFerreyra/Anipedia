@@ -51,11 +51,7 @@ nav ul li a:hover{
 }
 .resultado{
     overflow: auto;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.24);
-}
-.recomendaciones{
-    overflow: auto;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.24);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.24);
 }
 .nombre-lista{
  cursor: default;
